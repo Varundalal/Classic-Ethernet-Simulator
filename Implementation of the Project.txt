@@ -1,0 +1,17 @@
+COMPUTER NETWORKS 
+
+CLASSIC ETHERNET SIMULATION
+
+Varun Dalal
+ID : A04743047
+12/07/2016
+
+
+          In order to perform the communication between the client and server, the ip addresses are specified first. The interaction between client and server is done by sending a message. The client uses 1300 as the server port number.  Simulation of Ethernet with one client and one server and moreover, implementation was not able to process for multiple clients. The basic requirement is that the client and server programs should be run on different machines.  Since I am simulating the project with one client and server, I am unable to implement the collisions part of the project. All the Interprocess communication has been achieved by including the header file sys/socket.h. 
+
+Server: Header Files 
+ iostream, fstream, netinet/in.h, arpa/inet.h, unistd.h, strings.h, errno.h, stdio.h, stdlib.h, sys/types.h, sys/socket.h, The LISTENQ is defined to be 6 in this project. The functions line_read, readline and Readline are used to read the requests sent by the client and the written, Writen are used to send the replies. Out echo function is used to display the output to the user at the terminal. In the main, the predefined functions socket, bind and listen are used to initiate the connection process in order to perform socket communication.
+Client: Header Files 
+ iostream, errno.h, stdio.h, stdlib.h, sys/types.h, sys/socket.h, netinet/in.h, arpa/inet.h, unistd.h, strings.h. The MAXLINE is set to 4096 and the server port 1300 is used.Socket and Poll functions are also used in the program. The Socket function is used to create the socket. The functions Accept, Bind and Connect are used to initiate the connection sequence. Listen function is used to read the reply from the server.   
+
+
